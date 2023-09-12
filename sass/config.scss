@@ -1,0 +1,164 @@
+$qeola-yellow: #f2b705;
+$qeola-black: #01000e;
+// $qeola-black-bg: rgba(0, 0, 0, 0.75);
+$qeola-dark-black: #0d0d0d;
+
+$smb: 460px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1920px;
+
+@mixin rwd($propertyName, $defaultValue, $mediaQueries: ()) {
+  #{$propertyName}: #{$defaultValue} !important;
+
+  @each $breakpoint, $value in $mediaQueries {
+    @media (min-width: #{$breakpoint}) {
+      #{$propertyName}: #{$value} !important;
+    }
+  }
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  cursor: none;
+}
+.container {
+  @include rwd(
+    width,
+    98%,
+    (
+      $md: 95%,
+      $lg: 90%,
+      $xl: 90%,
+      $xxl: 90%,
+      $xxxl: 85%,
+    )
+  );
+  margin: auto;
+}
+.container-fluid {
+  @include rwd(
+    width,
+    98%,
+    (
+      $md: 95%,
+      $lg: 90%,
+      $xl: 90%,
+      $xxl: 90%,
+      $xxxl: 85%,
+    )
+  );
+  margin: auto;
+}
+input {
+  &:focus {
+    outline-width: 0;
+  }
+}
+
+h1 {
+  @include rwd(
+    font-size,
+    3.1rem,
+    (
+      $md: 3.6rem,
+      $lg: 4.2rem,
+      $xl: 4.5rem,
+      $xxl: 5.1rem,
+    )
+  );
+  //   font-size: 5.5rem !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h2 {
+  @include rwd(
+    font-size,
+    2.5rem,
+    (
+      $md: 2.8rem,
+      $lg: 3.4rem,
+      $xl: 3.8rem,
+      $xxl: 4.5rem,
+    )
+  );
+  font-weight: 700;
+  line-height: 1.2;
+}
+h3 {
+  @include rwd(
+    font-size,
+    2rem,
+    (
+      $md: 2.5rem,
+      $lg: 3rem,
+      $xl: 3.5rem,
+      $xxl: 4rem,
+    )
+  );
+  font-weight: 700;
+  line-height: 1.2;
+}
+h4 {
+  @include rwd(
+    font-size,
+    1.8rem,
+    (
+      $md: 2rem,
+      $lg: 2.4rem,
+      $xl: 2.6rem,
+      $xxl: 2.8rem,
+    )
+  );
+  font-weight: 700;
+  line-height: 1.2;
+}
+h5 {
+  @include rwd(
+    font-size,
+    1.5rem,
+    (
+      $md: 1.6rem,
+      $lg: 1.7rem,
+      $xl: 1.7rem,
+      $xxl: 1.7rem,
+    )
+  );
+  font-weight: 600;
+  line-height: 1.2;
+}
+h6 {
+  @include rwd(
+    font-size,
+    1rem,
+    (
+      $md: 1.1rem,
+      $lg: 1.2rem,
+      $xl: 1.3rem,
+      $xxl: 1.4rem,
+    )
+  );
+  font-weight: 600;
+  line-height: 1.2;
+}
+p {
+  @include rwd(
+    font-size,
+    1rem,
+    (
+      $md: 1rem,
+      $lg: 1rem,
+      $xl: 1rem,
+      $xxl: 1rem,
+    )
+  );
+  font-weight: 300;
+  // line-height: 1.2;
+}

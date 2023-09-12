@@ -1,0 +1,72 @@
+.design{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 3.5rem;
+}
+
+.build{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.position{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    mix-blend-mode: difference;
+    & .size{
+        // width: 5rem;
+        // height: 3rem;
+        transition-duration: .3s;
+        transition-property: transform;
+    }
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 5rem; */
+    & .card-text{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    & .brand{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.identity{
+    padding-left: 12rem;
+    font-weight: 300;
+    font-size: 1.8rem !important;
+    & a{
+        color: black !important;
+    }
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 3rem;
+    padding: 4rem 0 1rem 1rem !important;
+    & .header{
+        & .header__title{
+            font-size: 4.7rem !important;
+            font-weight: 700;
+        }
+        & .text{
+            font-size: 1.5rem !important;
+            font-weight: 300;
+            margin-left: 21rem;
+            padding: 3rem 0 5.7rem 0 !important;
+        }
+    }
+}
+// a:-webkit-any-link {
+//     text-decoration: none !important;
+// }

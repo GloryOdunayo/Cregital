@@ -1,0 +1,101 @@
+$big-font: 'Space Grotesk', sans-serif;
+$small-font: 'inter';
+$big-font-color: rgba(8, 19, 50, 1);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: 'Space Grotesk', sans-serif;
+  font-family: 'inter';
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    // Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg{
+  min-height: 100vh;
+  background-color: #E9F1FC;
+}
+.bg-box{
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  background-color: #1E6FD9;
+  color: white !important;
+  &:hover{
+    background-color: #1E5EC7;
+    color: white !important;
+  }
+}
+
+.main{
+  background-color: #E9F1FC;
+  // height: 80vh;
+}
+
+.footer{
+  background-color: #081332;
+  color: white;
+
+  & h6{
+    font: $big-font;
+  }
+
+  & .media{
+    color: white;
+    background-color: #198FFB;
+    height: 2rem;
+    width: 2rem;
+    & .fa{
+      position: relative;
+      // left: 0.2rem;
+      top: 0.2rem;
+    }
+  }
+  & .button__search{
+    position: relative;
+    top: -2.35rem !important;
+    left: 14.67rem;
+    border-top-right-radius: 0.3rem !important;
+    border-bottom-right-radius: 0.3rem !important;
+}
+}
+
+.input:focus{
+  outline-color: #8CC7FD;
+}
+.input:active {
+  border-color: #081332;
+  outline-color: #081332 !important;
+}
+.input{
+  width: 378px;
+  height: 3rem;
+  display: block;
+  // justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  outline-color: rgba(136, 136, 136, 1);
+  border-radius: 0.5rem;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */

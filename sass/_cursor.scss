@@ -1,0 +1,292 @@
+.ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include rwd(
+      width,
+      0px,
+      (
+        $md: 0px,
+        $lg: 30px,
+        $xl: 30px,
+        $xxl: 30px,
+      )
+    );
+    @include rwd(
+      height,
+      0px,
+      (
+        $md: 0px,
+        $lg: 30px,
+        $xl: 30px,
+        $xxl: 30px,
+      )
+    );
+    background-color: rgba(31, 30, 30, 0.4);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    will-change: width, height, transform, border;
+    z-index: 999;
+    pointer-events: none;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+  
+    & p,
+    & span.read {
+      display: none;
+    }
+    &.link-hover {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      //   top ease-out 100ms, left ease-out 100ms;
+      // -webkit-transition-duration: 20ms;
+      // transition-duration: 20ms;
+      @include rwd(
+        width,
+        0px,
+        (
+          $md: 0px,
+          $lg: 90px,
+          $xl: 90px,
+          $xxl: 95px,
+        )
+      );
+      @include rwd(
+        height,
+        0px,
+        (
+          $md: 0px,
+          $lg: 90px,
+          $xl: 90px,
+          $xxl: 95px,
+        )
+      );
+      border-width: 3px;
+      //   background-color: rgba(31, 30, 30, 0.4);
+      background-color: rgb(253, 247, 247);
+      mix-blend-mode: difference;
+      z-index: 999999;
+      // cursor: none !important;
+    }
+    &.link-hover-white {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      border-width: 3px;
+      background-color: $qeola-yellow;
+      mix-blend-mode: normal;
+      z-index: 99999;
+    }
+    &.link-hover-yellow {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      @include rwd(
+        width,
+        0px,
+        (
+          $md: 0px,
+          $lg: 60px,
+          $xl: 60px,
+          $xxl: 65px,
+        )
+      );
+      @include rwd(
+        height,
+        0px,
+        (
+          $md: 0px,
+          $lg: 60px,
+          $xl: 60px,
+          $xxl: 65px,
+        )
+      );
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      will-change: width, height, transform, border;
+      z-index: 99999;
+      pointer-events: none;
+      background-color: #fff;
+      mix-blend-mode: difference;
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+  
+      & p {
+        display: none;
+      }
+    }
+    &.link-hover-black {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      //   top ease-out 20ms, left ease-out 20ms;
+      // -webkit-transition-duration: 20ms;
+      // transition-duration: 20ms;
+      @include rwd(
+        width,
+        0px,
+        (
+          $md: 0px,
+          $lg: 60px,
+          $xl: 60px,
+          $xxl: 65px,
+        )
+      );
+      @include rwd(
+        height,
+        0px,
+        (
+          $md: 0px,
+          $lg: 60px,
+          $xl: 60px,
+          $xxl: 65px,
+        )
+      );
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      will-change: width, height, transform, border;
+      z-index: 999;
+      pointer-events: none;
+      background-color: #fff;
+      mix-blend-mode: difference;
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+  
+      & p {
+        display: none;
+      }
+    }
+    &.hovered {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      //   top ease-out 15ms, left ease-out 15ms;
+      // -webkit-transition-duration: 100ms;
+      // transition-duration: 100ms;
+      @include rwd(
+        width,
+        0px,
+        (
+          $md: 0px,
+          $lg: 75px,
+          $xl: 80px,
+          $xxl: 90px,
+        )
+      );
+      @include rwd(
+        height,
+        0px,
+        (
+          $md: 0px,
+          $lg: 75px,
+          $xl: 80px,
+          $xxl: 90px,
+        )
+      );
+      border-width: 3px;
+      //   background-color: rgba(31, 30, 30, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $qeola-black;
+      mix-blend-mode: normal;
+  
+      & p {
+        @include rwd(
+          display,
+          none,
+          (
+            $md: none,
+            $lg: flex,
+            $xl: flex,
+            $xxl: flex,
+          )
+        );
+        @include rwd(
+          font-size,
+          1rem,
+          (
+            $md: 1rem,
+            $lg: 1rem,
+            $xl: 1.1rem,
+            $xxl: 1.1rem,
+          )
+        );
+        margin: 0;
+        color: #fff;
+      }
+    }
+    &.hovered-read {
+      transition: width ease-in-out 0.3s, height ease-in-out 0.3s;
+      //   top ease-out 15ms, left ease-out 15ms;
+      // -webkit-transition-duration: 100ms;
+      // transition-duration: 100ms;
+      @include rwd(
+        width,
+        0px,
+        (
+          $md: 0px,
+          $lg: 75px,
+          $xl: 80px,
+          $xxl: 90px,
+        )
+      );
+      @include rwd(
+        height,
+        0px,
+        (
+          $md: 0px,
+          $lg: 75px,
+          $xl: 80px,
+          $xxl: 90px,
+        )
+      );
+      border-width: 3px;
+      //   background-color: rgba(31, 30, 30, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $qeola-black;
+      mix-blend-mode: normal;
+  
+      & span.read {
+        @include rwd(
+          display,
+          none,
+          (
+            $md: none,
+            $lg: flex,
+            $xl: flex,
+            $xxl: flex,
+          )
+        );
+        @include rwd(
+          font-size,
+          1rem,
+          (
+            $md: 1rem,
+            $lg: 1rem,
+            $xl: 1.1rem,
+            $xxl: 1.1rem,
+          )
+        );
+        margin: 0;
+        color: #fff;
+      }
+    }
+  }
+  
+  // .dot {
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   width: 8px;
+  //   height: 8px;
+  //   background-color: black;
+  //   border-radius: 100%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 999;
+  //   pointer-events: none;
+  // }
+  //   below code is used from step6
+  
+  .dot.hovered {
+    display: none;
+  }
+  
