@@ -18,10 +18,9 @@
     right: 1rem;
     mix-blend-mode: difference;
     & .size{
-        // width: 5rem;
-        // height: 3rem;
-        transition-duration: .3s;
-        transition-property: transform;
+        transition: transform .2s ease-out;
+        // transition-property: transform;
+        animation: infinite-spinning 2s infinite ease-out;
     }
 }
 
@@ -40,12 +39,18 @@
     }
 }
 
+
 .identity{
     padding-left: 12rem;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.8rem !important;
     & a{
         color: black !important;
+        text-decoration-thickness: -2px !important;
+        text-decoration-color: gray;
+    }
+    & .learn:hover{
+        background-color: gainsboro;
     }
 }
 
@@ -67,6 +72,12 @@
         }
     }
 }
-// a:-webkit-any-link {
-//     text-decoration: none !important;
-// }
+
+@keyframes infinite-spinning {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

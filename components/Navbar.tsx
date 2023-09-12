@@ -2,6 +2,7 @@ import { MouseContext } from "./../context/MouseContext";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC, useContext, useEffect, useState } from "react";
+import cregital from '../public/public/Screenshot 2023-09-12 144059.png';
 
 const Navbar: FC<any> = () => {
   // const { navbg } = useSelector((state: RootState) => state);
@@ -38,7 +39,7 @@ const Navbar: FC<any> = () => {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
     <nav
-      className={`navbar navbar-expand-md bg-body-transparent nav fixed-top
+      className={`navbar navbar-expand-md bg-body-transparent nav
       ${
         typeof window !== "undefined" &&
         window.scrollY >= 200 &&
@@ -60,12 +61,12 @@ const Navbar: FC<any> = () => {
           onMouseEnter={() => cursorChangeHandler("link-hover")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://cregital.com/wp-content/uploads/2020/02/Cregital_.svg"
+          <Image
+            src={cregital}
             alt="Cregital logo"
             className="img-fluid"
             loading="lazy"
+            height={30}
           />
         </Link>
         <button
@@ -80,34 +81,34 @@ const Navbar: FC<any> = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-            className="collapse navbar-collapse"
-            id="navbarSupportedContent"
-            onMouseEnter={() => cursorChangeHandler("")}
-            onMouseLeave={() => cursorChangeHandler("")}
+          className="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          onMouseEnter={() => cursorChangeHandler("")}
+          onMouseLeave={() => cursorChangeHandler("")}
         >
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-            <li className="elementor-icon-list-item" onMouseEnter={() =>
-                cursorChangeHandler(
-                    typeof window !== "undefined" && window.scrollY >= 80
-                    ? ""
-                    : "link-hover-white"
-                )
-            }
-            onMouseLeave={() => cursorChangeHandler("")}>
-				<Link href="#" onMouseEnter={() => cursorChangeHandler("link-hover")}
-                onMouseLeave={() =>
-                    cursorChangeHandler(
-                        typeof window !== "undefined" && window.scrollY >= 80
-                        ? ""
-                        : "link-hover-white"
-                    )
-                }>
+          <li className="elementor-icon-list-item" onMouseEnter={() =>
+            cursorChangeHandler(
+              typeof window !== "undefined" && window.scrollY >= 80
+              ? ""
+              : "link-hover-white"
+            )
+          }
+          onMouseLeave={() => cursorChangeHandler("")}>
+				<div onMouseEnter={() => cursorChangeHandler("link-hover")}
+          onMouseLeave={() =>
+            cursorChangeHandler(
+              typeof window !== "undefined" && window.scrollY >= 80
+              ? ""
+              : "link-hover-white"
+            )
+          }>
 
 					<span className="">
-			            <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" stroke-width="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
-                    </span>
-					<span className="text-decoration-none text-dark" style={{textDecoration:'none'}}>MENU</span>
-				</Link>
+			      <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" stroke-width="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
+          </span>
+					<span className="ps-2" style={{fontWeight:"700", verticalAlign:"middle", textDecoration: 'none', color:"#000000"}}>MENU</span>
+				</div>
                 
 			</li>
             {/* <li
