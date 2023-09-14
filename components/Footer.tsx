@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="">© {year} Cregital Design Agency</p>
           </div>                     
           <div className="col-md-3 socials">
-            <div className="d-flex align-items-center justify-content-between">
+            <div className="d-flex align-items-cente justify-content-around">
               <p className="" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>Instagram</p>
               <p className="" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>Twitter</p>
               <p className="" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>LinkedIn</p>

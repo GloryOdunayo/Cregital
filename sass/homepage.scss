@@ -27,6 +27,10 @@
     }
 }
 
+// .position [src$=".svg"]{
+//     width: 100px;
+// }
+
 .first{
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,35 @@
         background-repeat: no-repeat;
         width: 490px;
         height: 400px !important;
+    }
+}
+
+.animate-slide-up p {
+    position: relative;
+    top: 100vh;
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    &.text{
+        font-size: 3.5rem !important;
+        font-weight: 600;
+        color: white;
+        & .learn{
+            color: white !important;
+            text-decoration-thickness: -2px !important;
+            &:hover{
+                background-color: rgb(196, 190, 190) !important;
+            }
+        }
+    }
+}
+@keyframes slideUp {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1; /* Fades in as it slides up */
     }
 }
 

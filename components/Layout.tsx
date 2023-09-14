@@ -12,7 +12,7 @@ const Layout: FC<any> = ({ children }) => {
       onMouseLeave={() => cursorChangeHandler("")}
     >
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

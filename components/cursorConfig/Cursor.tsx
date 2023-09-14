@@ -12,7 +12,7 @@ const Cursor = () => {
         className={`ring ${cursorType}`}
         style={{ left: `${x}px`, top: `${y}px` }}
       >
-        <p className="fw-bold"> View </p>
+        <p className="fw-bold"> VIEW </p>
         <span className="read fw-bold"> Read </span>
       </div>
       <div
