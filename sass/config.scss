@@ -35,10 +35,10 @@ main {
 .container {
   @include rwd(
     width,
-    90%,
+    95%,
     (
       $md: 80%,
-      $lg: 80%,
+      $lg: 95%,
       $xl: 80%,
       $xxl: 80%,
       $xxxl: 75%,

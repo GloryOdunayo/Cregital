@@ -29,7 +29,7 @@ const Home: NextPage = () => {
             </div>
         </div>
         <div className="">
-          <div className="first container mt-5">
+          <div className="first container">
             <div onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} className="card-div">
               {/* <div className="img-card" style={{background: `url(https://cregital.com/wp-content/uploads/2021/06/FBN-website-1-scaled.jpg)`}}></div> */}
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website, UI/UX, Web app</p>
             </div>
           </div>
-          <div className="first container mt-5">
+          <div className="first container mt-4">
             <div className="card-div" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
                 <img className="img-card" src='https://cregital.com/wp-content/uploads/2020/04/Hash-Vest.png' alt='Hash image'/>
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website</p>
             </div>
           </div>
-          <div className="first container mt-5">
+          <div className="first container mt-4">
             <div className="card-div" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
                 <div className="img-card" style={{background: `url(https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website</p>
             </div>
           </div>
-          <div className="first container mt-5">
+          <div className="first container mt-4">
             <div className="" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}>
               <div className="img-cards" style={{background: `url(https://cregital.com/wp-content/uploads/2020/02/ARK-Acts-of-Random-Kindness.svg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>

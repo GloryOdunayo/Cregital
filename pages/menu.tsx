@@ -104,15 +104,15 @@ const Menu:FC<any> = () => {
         </div>
       </div>
       </nav>
-        <div className="wrapper" style={{height:"100vh"}}>
+        <div className="wrapper" style={{height: "90vh"}}>
             <div className="animate-slide-up container">
                 {/* <p>Your Text Here</p> */}
-                <p className="text py-3">
+                <p className="text py-3 text-center">
                 Learn more&nbsp;
                 <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>about us</Link>, check out&nbsp;
-                <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>our work</Link>, the latest on&nbsp;
+                <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>our work</Link>, the latest on &nbsp;
                 <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>instagram</Link>&nbsp;and&nbsp;
-                <Link href="/" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>contact us</Link><span style={{color: '#4d4d4d'}}></span>
+                <Link href="/" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>contact us</Link>
             </p>
             </div>
         </div>

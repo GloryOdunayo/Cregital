@@ -66,14 +66,15 @@
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     &.text{
-        font-size: 3.5rem !important;
+        font-size: 4.5rem !important;
         font-weight: 600;
         color: white;
         & .learn{
             color: white !important;
             text-decoration-thickness: -2px !important;
             &:hover{
-                background-color: rgb(196, 190, 190) !important;
+                background-color: #333333 !important;
+                text-decoration: none;
             }
         }
     }
@@ -100,7 +101,8 @@
         text-decoration-color: gray;
     }
     & .learn:hover{
-        background-color: rgb(196, 190, 190);
+        background-color: #333333;
+        text-decoration: none;
     }
 }
 
@@ -124,7 +126,8 @@
             & .learn{
                 color: white !important;
                 &:hover{
-                    background-color: rgb(196, 190, 190) !important;
+                    background-color: #333333 !important;
+                    text-decoration: none;
                 }
             }
         }
@@ -184,9 +187,12 @@
         color: white;
         margin-top: 3rem;
         padding: 0.5rem 0 1rem 1rem !important;
+        & .container-fluid{
+            width: 90%;
+        }
         & .header{
             & .header__title{
-                font-size: 2rem !important;
+                font-size: 1.8rem !important;
                 font-weight: 700;
             }
             & .text{
@@ -205,6 +211,30 @@
         // }
         & .footer{
             display: block;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .animate-slide-up p {
+        &.text{
+            font-size: 5rem !important;
+            font-weight: 600;
+            color: white;
+            & .learn{
+                color: white !important;
+                text-decoration-thickness: -2px !important;
+                &:hover{
+                    background-color: #333333 !important;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+    .footer{
+        & .container-fluid{
+            width: 81% !important;
+            margin: auto;
         }
     }
 }
