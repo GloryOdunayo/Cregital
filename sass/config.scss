@@ -22,6 +22,9 @@ $xxxl: 1920px;
 body {
   font-family: "IBM Plex Sans", sans-serif !important;
 }
+*, *::before, *::after{
+  -webkit-font-smoothing: antialiased;
+}
 
 main {
   margin: 0;
@@ -32,13 +35,13 @@ main {
 .container {
   @include rwd(
     width,
-    98%,
+    90%,
     (
-      $md: 95%,
-      $lg: 90%,
-      $xl: 90%,
-      $xxl: 90%,
-      $xxxl: 85%,
+      $md: 75%,
+      $lg: 80%,
+      $xl: 80%,
+      $xxl: 80%,
+      $xxxl: 75%,
     )
   );
   margin: auto;

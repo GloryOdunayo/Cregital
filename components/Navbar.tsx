@@ -86,92 +86,30 @@ const Navbar: FC<any> = () => {
           onMouseEnter={() => cursorChangeHandler("")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li className="elementor-icon-list-item" onMouseEnter={() =>
-            cursorChangeHandler(
-              typeof window !== "undefined" && window.scrollY >= 80
-              ? ""
-              : "link-hover-white"
-            )
-          }
-          onMouseLeave={() => cursorChangeHandler("")}>
-				<div onMouseEnter={() => cursorChangeHandler("link-hover")}
-          onMouseLeave={() =>
-            cursorChangeHandler(
-              typeof window !== "undefined" && window.scrollY >= 80
-              ? ""
-              : "link-hover-white"
-            )
-          }>
-
-					<span className="">
-			      <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" stroke-width="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
-          </span>
-					<span className="ps-2" style={{fontWeight:"700", verticalAlign:"middle", textDecoration: 'none', color:"#000000"}}>MENU</span>
-				</div>
-                
-			</li>
-            {/* <li
-              className=""
-              onMouseEnter={() =>
-                cursorChangeHandler(
-                  typeof window !== "undefined" && window.scrollY >= 80
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li className="" onMouseEnter={() =>
+              cursorChangeHandler(
+                typeof window !== "undefined" && window.scrollY >= 80
+                ? ""
+                : "link-hover-white"
+              )
+            }
+            onMouseLeave={() => cursorChangeHandler("")}>
+              <div onMouseEnter={() => cursorChangeHandler("link-hover")}
+                onMouseLeave={() =>
+                  cursorChangeHandler(
+                    typeof window !== "undefined" && window.scrollY >= 80
                     ? ""
                     : "link-hover-white"
-                )
-              }
-              onMouseLeave={() => cursorChangeHandler("")}
-            >
-              Explore{" "}
-              <Link
-                className=""
-                aria-current="page"
-                href="/our-work"
-                onMouseEnter={() => cursorChangeHandler("link-hover")}
-                onMouseLeave={() =>
-                  cursorChangeHandler(
-                    typeof window !== "undefined" && window.scrollY >= 80
-                      ? ""
-                      : "link-hover-white"
                   )
-                }
-              >
-                our work
-              </Link>
-              , learn{" "}
-              <Link
-                className=""
-                aria-current="page"
-                href="/about-us"
-                onMouseEnter={() => cursorChangeHandler("link-hover")}
-                onMouseLeave={() =>
-                  cursorChangeHandler(
-                    typeof window !== "undefined" && window.scrollY >= 80
-                      ? ""
-                      : "link-hover-white"
-                  )
-                }
-              >
-                about us
-              </Link>{" "}
-              and{" "}
-              <Link
-                className=""
-                aria-current="page"
-                href="/reach-out"
-                onMouseEnter={() => cursorChangeHandler("link-hover")}
-                onMouseLeave={() =>
-                  cursorChangeHandler(
-                    typeof window !== "undefined" && window.scrollY >= 80
-                      ? ""
-                      : "link-hover-white"
-                  )
-                }
-              >
-                reach out
-              </Link>
-              .{" "}
-            </li> */}
+                }>
+
+                <span className="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" stroke-width="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
+                </span>
+                <span className="ps-2" style={{fontWeight:"700", verticalAlign:"middle", textDecoration: 'none', color:"#000000"}}>MENU</span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
