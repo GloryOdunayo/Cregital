@@ -20,69 +20,69 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Navbar />
-        <div className="wrapper" style={{height:"100vh"}}>
+        <div className="wrapper mx-auto" style={{height:"100vh", maxWidth:"1140px"}}>
           <div className="">
-            <div className="design col-lg-7 col-md-10 text-center">
+            <div className="design col-lg-8 col-10 text-center">
               Cregital designs & builds digital experiences
             </div>
-            <div className="text-center col-md-7 mx-auto build">We design, build and launch websites and products that are simple, beautiful and helps businesses grow.</div>
-            </div>
+            <div className="text-center col-10 col-md-8 mx-auto build">We design, build and launch websites and products that are simple, beautiful and helps businesses grow.</div>
+          </div>
         </div>
         <div className="">
           <div className="first container">
             <div onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")} className="card-div">
+              onMouseLeave={() => cursorChangeHandler("")} className="card-div1">
               {/* <div className="img-card" style={{background: `url(https://cregital.com/wp-content/uploads/2021/06/FBN-website-1-scaled.jpg)`}}></div> */}
               <img src='https://cregital.com/wp-content/uploads/2021/06/FBN-website-1-scaled.jpg' alt='First bank image' className='img-card'/>
               <div className="mt-4 card-text">First Bank</div>
               <p className='brand'>Website, UI/UX</p>
             </div>
             <div onMouseEnter={() => cursorChangeHandler("hovered")}
-              onMouseLeave={() => cursorChangeHandler("")}  className="card-div">
+              onMouseLeave={() => cursorChangeHandler("")}  className="card-div2">
               <img className="img-card" src='https://cregital.com/wp-content/uploads/2020/02/Disha-Pages-scaled-1.jpg' alt='Disha page image'/>
               <div className="mt-4 card-text">Disha Pages</div>
               <p className='brand'>Website, UI/UX, Web app</p>
             </div>
           </div>
           <div className="first container mt-4">
-            <div className="card-div" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
                 <img className="img-card" src='https://cregital.com/wp-content/uploads/2020/04/Hash-Vest.png' alt='Hash image'/>
                 <div className="mt-4 card-text">Hash</div>
                 <p className='brand'>Branding, Website</p>
             </div>
-            <div className="" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div2" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}>
-              <div className="img-cards" style={{background: `url(https://cregital.com/wp-content/uploads/2020/03/coronation-banking-home-2.jpg)`}}></div>
+              <div className="img-cards" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/03/coronation-banking-home-2.jpg)`}}></div>
               <div className="mt-4 card-text">Coronation Bank</div>
               <p className='brand'>Website</p>
             </div>
           </div>
           <div className="first container mt-4">
-            <div className="card-div" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
-                <div className="img-card" style={{background: `url(https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
-                <div className="mt-4 card-text">Tony Elumelu Foundation</div>
-                <p className='brand'>Website</p>
+              <div className="img-card" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
+              <div className="mt-4 card-text">Tony Elumelu Foundation</div>
+              <p className='brand'>Website</p>
             </div>
-            <div className="" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div2" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}>
-              <div className="img-cards" style={{background: `url(https://cregital.com/wp-content/uploads/2020/03/heirs-holdings.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
+              <div className="img-cards" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/03/heirs-holdings.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
               
               <div className="mt-4 card-text">Heirs Holdings</div>
               <p className='brand'>Website</p>
             </div>
           </div>
           <div className="first container mt-4">
-            <div className="" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}>
-              <div className="img-cards" style={{background: `url(https://cregital.com/wp-content/uploads/2020/02/ARK-Acts-of-Random-Kindness.svg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
-              <div className="mt-4 card-text">Ark</div>
+              <div className="img-cards" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/02/ARK-Acts-of-Random-Kindness.svg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
+              <div className="mt-4 card-text">ARK</div>
               <p className='brand'>Branding, Website, UI/UX, Web app</p>
             </div>
-            <div className="card-div" onMouseEnter={() => cursorChangeHandler("hovered")}
+            <div className="card-div2" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
-                <div className="img-card" style={{background: `url(https://cregital.com/wp-content/uploads/2016/02/Zenith-HQ.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
+                <div className="img-card" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2016/02/Zenith-HQ.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
                 <div className="mt-4 card-text">Zenith Bank</div>
                 <p className='brand'>Website</p>
             </div>
