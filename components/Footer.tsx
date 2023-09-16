@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="header__title">
             Get in touch
           </div>
-          <p className="text py-3">
+          <p className="text">
             Contact us to find out how we can help you. If it’s easier you can email us at&nbsp;
             <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>hello@cregital.com.</Link>
             &nbsp;Download the&nbsp;<Link href="/" className="learn" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>Cregital brochure.pdf</Link><span style={{color: '#4d4d4d'}}>&nbsp;(5mb)</span>
