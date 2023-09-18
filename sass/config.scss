@@ -46,20 +46,20 @@ main {
   );
   margin: auto;
 }
-.container-fluid {
-  @include rwd(
-    width,
-    98%,
-    (
-      $md: 95%,
-      $lg: 90%,
-      $xl: 90%,
-      $xxl: 90%,
-      $xxxl: 85%,
-    )
-  );
-  margin: auto;
-}
+// .container-fluid {
+//   @include rwd(
+//     width,
+//     98%,
+//     (
+//       $md: 95%,
+//       $lg: 90%,
+//       $xl: 90%,
+//       $xxl: 90%,
+//       $xxxl: 85%,
+//     )
+//   );
+//   margin: auto;
+// }
 input {
   &:focus {
     outline-width: 0;

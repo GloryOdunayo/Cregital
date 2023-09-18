@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    height: 100%;
 }
 .design{
     margin: auto;
-    font-size: 75px;
+    font-size: 6.2rem;
     letter-spacing: 0.5px;
     font-weight: 600;
     line-height: 1.3em;
@@ -36,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // margin-top: 0;
     // border: 1px solid red;
     .card-div1{
         width: 50%;
@@ -101,6 +103,25 @@
 }
 
 .animate-slide-up p {
+    position: relative;
+    top: 100vh;
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    &.text{
+        font-size: 4.5rem !important;
+        font-weight: 600;
+        color: white;
+        & .learn{
+            color: white !important;
+            text-decoration-thickness: -2px !important;
+            &:hover{
+                background-color: #333333 !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.animate-slide-up {
     position: relative;
     top: 100vh;
     opacity: 0;
@@ -194,28 +215,33 @@
     .first{
         display: block;
         .card-div1{
-            width: 100%;
+            width: 100% !important;
             // border: 1px solid yellow;
             & .img-card{
-                margin: 0 0 0 0;
+                margin: 0 0% 0 0% !important;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 height: 580px !important;
             }
             & .img-cards{
-                margin: 0 0 0 0;
+                margin: 0 0% 0 0% !important;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 height: 400px !important;
             }
+            & .brand{
+                font-size: 1rem;
+                font-weight: 300;
+                margin: 0 0% 0 0;
+            }
         }
         .card-div2{
-            width: 100%;
+            width: 100% !important;
             // border: 1px solid yellow;
             & .img-card{
-                margin: 0 0 0 0;
+                margin: 0 0% 0 0% !important;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -223,12 +249,18 @@
                 height: 580px !important;
             }
             & .img-cards{
-                margin: 0 0 0 0;
+                margin: 0 0% 0 0% !important;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 // width: 490px;
                 height: 400px !important;
+            }
+            & .brand{
+                margin: 0 0% 0 0;
+            }
+            & .card-text{
+                margin: 0 0 0 0%;
             }
         }
         & .card-text{

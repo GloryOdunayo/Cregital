@@ -94,7 +94,7 @@ const Navbar: FC<any> = () => {
                 }>
 
                 <span className="">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" stroke-width="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="15px" viewBox="0 0 23 15"><title>menu (2)</title><desc>Created with Sketch.</desc><g id="Brand" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd"><g id="menu-(2)" stroke="#000000" strokeWidth="2.5"><line x1="0" y1="1.25" x2="22.5" y2="1.25" id="Path"></line><line x1="0" y1="13.75" x2="22.5" y2="13.75" id="Path"></line></g></g></svg>
                 </span>
                 <span className="ps-2" style={{fontWeight:"700", verticalAlign:"middle", textDecoration: 'none', color:"#000000"}}>MENU</span>
               </Link>
