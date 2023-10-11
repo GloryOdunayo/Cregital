@@ -14,7 +14,7 @@
 }
 
 .build{
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     font-weight: 300;
 }
 .position{
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-top: 0;
+    margin-top: 5rem;
     // border: 1px solid red;
     .card-div1{
         width: 50%;
@@ -171,16 +171,18 @@
     background-color: black;
     color: white;
     margin-top: 3rem;
-    padding: 2.2rem 0 0.8rem 0.8rem !important;
+    padding: 2.2rem 0 0.8rem 0 !important;
     & .header{
         padding-top: 2.1rem;
-        padding-left: 13px;
+        width: 85%;
+        margin: 0 auto;
+        // padding-left: 13px;
         & .header__title{
             font-size: 4.7rem !important;
             font-weight: 600;
         }
         & .text{
-            font-size: 1.6rem !important;
+            font-size: 1.57rem !important;
             font-weight: 300;
             margin-left: 20rem;
             padding: 2.0rem 0rem 2.8rem 1rem !important;
@@ -198,6 +200,7 @@
     }
     & .footer{
         display: flex;
+        width: 85% !important;
         justify-content: space-between;
     }
 }
@@ -305,10 +308,8 @@
         & p{
             font-size: 0.7rem !important;
         }
-        // & .social {
-        //     width: 60% !important;
-        // }
         & .footer{
+            width: 85% !important;
             display: block;
         }
     }

@@ -18,7 +18,7 @@ const Footer = () => {
             &nbsp;Download the&nbsp;<Link href="/" className="learn" onMouseEnter={() => cursorChangeHandler("link-hover")} onMouseLeave={() => cursorChangeHandler("")}>Cregital brochure.pdf</Link><span style={{color: '#4d4d4d'}}>&nbsp;(5mb)</span>
           </p>
         </div>
-        <div className="footer">
+        <div className="footer mx-auto">
           <div className="col-md-4">
             <p className="">© {year} Cregital Design Agency</p>
           </div>                     

@@ -47,7 +47,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website, UI/UX, Web app</p>
             </div>
           </div>
-          <div className="first container mt-4">
+          <div className="first container">
             <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
                 {/* <img className="img-card" src='https://cregital.com/wp-content/uploads/2020/04/Hash-Vest.png' alt='Hash image'/> */}
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website</p>
             </div>
           </div>
-          <div className="first container mt-4">
+          <div className="first container">
             <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")} >
               <div className="img-card" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/02/Cregital-TEF.jpg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
               <p className='brand'>Website</p>
             </div>
           </div>
-          <div className="first container mt-4">
+          <div className="first container">
             <div className="card-div1" onMouseEnter={() => cursorChangeHandler("hovered")}
               onMouseLeave={() => cursorChangeHandler("")}>
               <div className="img-cards" style={{backgroundImage: `url(https://cregital.com/wp-content/uploads/2020/02/ARK-Acts-of-Random-Kindness.svg)`, backgroundSize:"cover", backgroundPosition:"center"}}></div>
@@ -109,7 +109,6 @@ const Home: NextPage = () => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
           <img width="100%" height="80%" src="https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1.jpg" className="attachment-full size-full" alt="" loading="lazy" srcSet="https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1.jpg 2560w, https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1-300x225.jpg 300w, https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1-1024x767.jpg 1024w, https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1-768x575.jpg 768w, https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1-1536x1151.jpg 1536w, https://cregital.com/wp-content/uploads/2020/02/Cregital-About-us-Masonry2-scaled-1-2048x1534.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />
         </div>
-        <Footer />
       </main>
     </div>
   )

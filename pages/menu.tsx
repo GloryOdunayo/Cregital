@@ -34,8 +34,8 @@ const Menu:FC<any> = () => {
   return (
     <>
     <div className="" style={{backgroundColor:"black", minHeight:"100vh"}}>
-      <nav
-      className={`navbar navbar-expand-md bg-body-transparent nav
+      <nav style={{maxWidth:"1140px"}}
+      className={`navbar navbar-expand-md bg-body-transparent mx-auto nav
       ${
         typeof window !== "undefined" &&
         window.scrollY >= 200 &&
@@ -109,7 +109,7 @@ const Menu:FC<any> = () => {
                 {/* <p>Your Text Here</p> */}
                 <p className="text py-3 text-center">
                 Learn more&nbsp;
-                <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>about us</Link>, check out&nbsp;
+                <Link href="/about" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>about us</Link>, check out&nbsp;
                 <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>our work</Link>, the latest on &nbsp;
                 <Link href="" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>instagram</Link>&nbsp;and&nbsp;
                 <Link href="/" className="learn" onMouseEnter={() => cursorChangeHandler("link")} onMouseLeave={() => cursorChangeHandler("")}>contact us</Link>
